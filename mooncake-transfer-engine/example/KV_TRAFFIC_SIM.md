@@ -186,7 +186,7 @@ sudo ip netns exec mca python3 mooncake-transfer-engine/example/kv_traffic_sim.p
 ### 6.2 稳定性（P1）
 
 ```bash
---num_requests 5000 --rate 50 --duration 约 100s
+--num_requests 5000 --rate 50     # 约 100 秒
 ```
 
 判定：`failed=0`、`mismatched=0`、进程 RSS 无明显增长（可用 `ps` 前后对比）。
